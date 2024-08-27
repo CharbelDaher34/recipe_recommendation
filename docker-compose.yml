@@ -1,0 +1,24 @@
+services:
+  api:
+    build:
+      context: ./api
+    # ports:
+    #   - "8000:8000"
+    networks:
+      - app-network
+
+  gradio_app:
+    build:
+      context: ./gradio_app
+    ports:
+      - "8010:8010"
+    expose:
+      - "8010"
+    depends_on:
+      - api
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

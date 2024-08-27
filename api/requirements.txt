@@ -1,0 +1,13 @@
+fastapi
+torch
+pandas
+pillow
+scikit-learn
+transformers
+uvicorn
+timm
+einops
+tabulate
+deep_translator
+langdetect
+numpy

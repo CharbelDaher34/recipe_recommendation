@@ -1,0 +1,3 @@
+*.pt
+*.bin
+./api/jina_clip_v1_model/config.json
