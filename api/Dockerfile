@@ -15,5 +15,6 @@ COPY . .
 
 # Define environment variable
 ENV PYTHONUNBUFFERED=1
+
 # Run FastAPI on uvicorn server
 CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8000"]

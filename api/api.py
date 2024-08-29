@@ -1,5 +1,4 @@
 # prediction_api.py
-
 from fastapi import FastAPI, HTTPException, Request
 import torch
 import pandas as pd
@@ -19,7 +18,6 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
 
 app = FastAPI()
-
 
 # Functions used
 def load_user_embeddings():

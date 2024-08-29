@@ -13,7 +13,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the current directory contents into the container at /app
 COPY . .
 
-# Expose port 8008 to the outside world
+# Expose port 80 to the outside world
 EXPOSE 8010
 
 # Define environment variable
